@@ -1,4 +1,4 @@
-package com.javanauta.bffagendador.infrastructure.client;
+package com.javanauta.bffagendador.infrastructure;
 
 
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;

@@ -3,13 +3,10 @@ package com.javanauta.bffagendador.business;
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TelefoneDTO;
 import com.javanauta.bffagendador.business.dto.UsuarioDTO;
-import com.javanauta.bffagendador.infrastructure.client.UsuarioClient;
+import com.javanauta.bffagendador.infrastructure.UsuarioClient;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.concurrent.CompletionException;
 
 @Service
 @RequiredArgsConstructor
