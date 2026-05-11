@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.*;
 @FeignClient(name = "usuario", url = "${usuario.url}")
 public interface UsuarioClient {
 
-    @GetMapping("/usuario")
+    @GetMapping
     UsuarioDTO listarTodosUsuarios(@RequestParam("email") String email,
                                    @RequestHeader("Authorization") String token);
 
 
-    @PostMapping("/usuario")
+    @PostMapping
     UsuarioDTO salvaUsuario(@RequestBody UsuarioDTO usuarioDTO);
 
 
