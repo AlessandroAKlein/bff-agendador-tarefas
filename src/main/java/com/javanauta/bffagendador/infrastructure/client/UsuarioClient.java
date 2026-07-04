@@ -1,11 +1,10 @@
-package com.javanauta.bffagendador.infrastructure;
+package com.javanauta.bffagendador.infrastructure.client;
 
 
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TelefoneDTO;
 import com.javanauta.bffagendador.business.dto.UsuarioDTO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @FeignClient(name = "usuario", url = "${usuario.url}")

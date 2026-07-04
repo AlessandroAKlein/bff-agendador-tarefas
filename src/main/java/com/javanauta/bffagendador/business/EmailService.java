@@ -2,15 +2,10 @@ package com.javanauta.bffagendador.business;
 
 
 import com.javanauta.bffagendador.business.dto.TarefaDTO;
-import com.javanauta.bffagendador.infrastructure.NotificacaoClient;
+import com.javanauta.bffagendador.infrastructure.client.NotificacaoClient;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 
 import org.springframework.stereotype.Service;
-
-
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 
 @Service
 @RequiredArgsConstructor

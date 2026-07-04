@@ -3,7 +3,7 @@ package com.javanauta.bffagendador.business;
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TelefoneDTO;
 import com.javanauta.bffagendador.business.dto.UsuarioDTO;
-import com.javanauta.bffagendador.infrastructure.UsuarioClient;
+import com.javanauta.bffagendador.infrastructure.client.UsuarioClient;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

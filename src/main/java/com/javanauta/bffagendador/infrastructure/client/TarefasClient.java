@@ -1,14 +1,10 @@
-package com.javanauta.bffagendador.infrastructure;
+package com.javanauta.bffagendador.infrastructure.client;
 
 
-import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TarefaDTO;
-import com.javanauta.bffagendador.business.dto.TelefoneDTO;
-import com.javanauta.bffagendador.business.dto.UsuarioDTO;
 import com.javanauta.bffagendador.infrastructure.enums.StatusNotificacaoEnum;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
