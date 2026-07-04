@@ -3,7 +3,7 @@ package com.javanauta.bffagendador.business;
 
 
 import com.javanauta.bffagendador.business.dto.TarefaDTO;
-import com.javanauta.bffagendador.infrastructure.TarefasClient;
+import com.javanauta.bffagendador.infrastructure.client.TarefasClient;
 import com.javanauta.bffagendador.infrastructure.enums.StatusNotificacaoEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
