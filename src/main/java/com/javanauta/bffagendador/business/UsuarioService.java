@@ -3,6 +3,7 @@ package com.javanauta.bffagendador.business;
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TelefoneDTO;
 import com.javanauta.bffagendador.business.dto.UsuarioDTO;
+import com.javanauta.bffagendador.business.dto.ViaCepDTO;
 import com.javanauta.bffagendador.infrastructure.client.UsuarioClient;
 
 import lombok.RequiredArgsConstructor;
@@ -55,6 +56,10 @@ public class UsuarioService {
 
     public TelefoneDTO adicionarTelefone (TelefoneDTO dto, String token){
        return usuarioClient.adicionarTelefone(dto,token);
+    }
+
+    public ViaCepDTO buscarEnderecoPorCep (String cep){
+        return usuarioClient.buscarDadosCep(cep);
     }
 
 

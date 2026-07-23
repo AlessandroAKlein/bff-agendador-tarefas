@@ -4,7 +4,9 @@ package com.javanauta.bffagendador.infrastructure.client;
 import com.javanauta.bffagendador.business.dto.EnderecoDTO;
 import com.javanauta.bffagendador.business.dto.TelefoneDTO;
 import com.javanauta.bffagendador.business.dto.UsuarioDTO;
+import com.javanauta.bffagendador.business.dto.ViaCepDTO;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @FeignClient(name = "usuario", url = "${usuario.url}")
@@ -49,5 +51,8 @@ public interface UsuarioClient {
     @PostMapping("/telefone")
     TelefoneDTO adicionarTelefone(@RequestBody TelefoneDTO telefoneDTO,
                                   @RequestHeader("Authorization") String token);
+
+    @GetMapping("/endereco/{cep}")
+    ViaCepDTO buscarDadosCep(@PathVariable ("cep") String cep);
 
 }
